@@ -1,0 +1,54 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.art-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.art-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.art-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.art-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.art-card:hover .art-info {
+  transform: translateY(0);
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  opacity: 0.9;
+}

@@ -8,17 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
     rel="stylesheet">
-    <script src="gallery/photo-carousel.js"></script>
+    <script type="module" src="js/app.js"></script>
     <title>Campus Art</title>
 </head>
 <body>
     <header>
-        <div class="header-container"></div>
+        <div class="header-container">
             <nav class="navbar">
                 <ul>
                     <li><a href="#exhibitions">Exhibitions</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <h1 class="gallery-title">
+                    <h1 class="carousel-title">
                         <a href="#">Campus Art</a>
                     </h1>
                     <li><a href="#events">Events</a></li>
@@ -30,15 +30,16 @@
     <div class="home">
         <photo-carousel></photo-carousel>
         <div class="title-and-buttons">
-            <h2 class="home-title">Welcome to Campus Gallery of Art</h2>
+            <h2 class="home-title">Welcome to Campus Museum of Art</h2>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic odio sapiente</span>
             <div class="Buttons">
                 <button class="button">Plan your Visit</button>
-                <button class="button">View Gallery</button>
+                <button class="button">View carousel</button>
             </div>
         </div>
     </div>
-    
+    <art-gallery id="gallery"></art-gallery>
+    <visit-uss id="visit"></visit-uss>
     
     
 </body>

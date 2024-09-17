@@ -1,0 +1,74 @@
+{
+    "artworks": [
+      {
+        "id": 1,
+        "title": "The Starry Night",
+        "artist": "Vincent van Gogh",
+        "year": 1889,
+        "image": "img/starry-night.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Mona Lisa",
+        "artist": "Leonardo da Vinci",
+        "year": 1503,
+        "image": "img/mona-lisa.jpg"
+      },
+      {
+        "id": 3,
+        "title": "The Persistence of Memory",
+        "artist": "Salvador Dalí",
+        "year": 1931,
+        "image": "img/persistence-of-memory.webp"
+      },
+      {
+        "id": 4,
+        "title": "The Scream",
+        "artist": "Edvard Munch",
+        "year": 1893,
+        "image": "img/the-scream.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Girl with a Pearl Earring",
+        "artist": "Johannes Vermeer",
+        "year": 1665,
+        "image": "img/girl-with-pearl-earring.jpg"
+      },
+      {
+        "id": 6,
+        "title": "The Night Watch",
+        "artist": "Rembrandt",
+        "year": 1642,
+        "image": "img/night-watch.jpg"
+      },
+      {
+        "id": 7,
+        "title": "The Birth of Venus",
+        "artist": "Sandro Botticelli",
+        "year": 1486,
+        "image": "img/birth-of-venus.jpeg"
+      },
+      {
+        "id": 8,
+        "title": "Les Demoiselles d'Avignon",
+        "artist": "Pablo Picasso",
+        "year": 1907,
+        "image": "img/les-demoiselles-davignon.webp"
+      },
+      {
+        "id": 9,
+        "title": "The Son of Man",
+        "artist": "René Magritte",
+        "year": 1964,
+        "image": "img/son-of-man.jpg"
+      },
+      {
+        "id": 10,
+        "title": "The Sleeping Gypsy",
+        "artist": "Henri Rousseau",
+        "year": 1897,
+        "image": "img/sleeping-gypsy.jpeg"
+      }
+    ]
+  }

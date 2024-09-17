@@ -1,71 +1,61 @@
-/* reset.css */
+/* style.css */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
-
 
 body, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
     text-decoration: none;
     list-style: none;
 }
 
-.gallery-title a{
+.carousel-title a {
     text-decoration: none;
     font-weight: 600;
-    color: black ;
+    color: black;
 }
+
 .navbar {
     margin-top: 1rem;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
-.navbar li a{
+.navbar li a {
     color: grey;
-    
-}
-
-.navbar li a:hover{
-    color: black;
-    transition: .3s;
-    
-}
-
-.navbar ul li a {
-    text-decoration: none;
     font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
+.navbar li a:hover {
+    color: black;
+}
 
 .home {
     position: relative;
 }
 
-.photo-carousel {
-    width: 100%;
-    height: auto;
-}
-
 .title-and-buttons {
     position: absolute;
-    top: 40%; 
+    top: 40%;
     left: 0;
     width: 100%;
     padding: 20px;
@@ -73,17 +63,24 @@ body, h2, h3, p, ul, li, a {
     z-index: 10;
     display: flex;
     flex-direction: column;
-    place-items: center;
+    align-items: center;
+    text-align: center;
 }
 
-.home-title{
+.home-title {
     font-weight: 600;
-    font-size: xxx-large;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .Buttons {
-    margin-top:1rem ;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .button {
     background: rgba(0, 0, 0, 0.1);
     color: black;
@@ -93,6 +90,7 @@ body, h2, h3, p, ul, li, a {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
+    border: none;
 }
 
 .button:hover {
@@ -105,3 +103,32 @@ body, h2, h3, p, ul, li, a {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .title-and-buttons {
+        top: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .title-and-buttons {
+        top: 20%;
+    }
+}
